@@ -1,0 +1,52 @@
+body{
+	background:black;
+	color:transparent;
+	overflow:hidden;
+}
+.nirmal-img{
+	border-radius:60px;
+    width: 150px;
+    height: 150px;
+    background: red;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.nirmal-img:hover {
+         width: 500px;
+         height: 500px;
+         -webkit-transform: rotate(360deg); 
+         transform: rotate(360deg);
+          }
+
+.container{
+	display:flex;
+	flex-direction: column;
+	background:url(https://images.pexels.com/photos/1415557/pexels-photo-1415557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center/cover;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+
+}
+.animated {
+	font-family: 'Charm', cursive;
+	margin:0;
+	padding:0;
+	font-size:4rem;
+	background:url("https://previews.123rf.com/images/annagolant/annagolant1612/annagolant161200062/70849423-orange-stripes-on-white-background-striped-diagonal-pattern-blue-diagonal-lines-background-winter-or.jpg");
+	background-clip:text;
+	-webkit-background-clip:text;
+	animation:moveBg 10s linear infinite;
+	-webkit-animation:moveBg 10s linear infinite;
+
+
+}
+@keyframes moveBg{
+	0%{
+		background-position: 0% 30%;
+	}
+	100%{
+		background-position:100% 50%;
+	}
+}
